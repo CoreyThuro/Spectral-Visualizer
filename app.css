@@ -1,0 +1,34 @@
+h1 {
+    text-align: center;
+    color: black;
+}
+
+p {
+    margin-top: 5%;
+    text-indent: 10%;
+    color: aliceblue;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 9%;
+}
+
+input[type="text"] {
+    display: block;
+    margin: 0 auto;
+    border: 1px, solid, white;
+}
+
+#container {
+    text-align: center;
+    margin-top: 20%;
+}
+
+body {
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(0,212,255,1) 100%); 
+}
+
+#scriptdiv{
+    display: inline;
+    align-items: center;
+}
