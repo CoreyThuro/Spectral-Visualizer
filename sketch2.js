@@ -51,7 +51,7 @@ function draw() {
       let x = 0;
       let y = 0;
       
-      if (amp > 10) {
+      if (amp > 50) {
       
         //first set
         fill(255, 255, 255);
