@@ -18,7 +18,7 @@ function toggleRecording() {
 }
 //TODO allow user to choose their own file path
 function preload() {
-  recording = loadSound("assets/drone.mp3");
+  recording = loadSound("assets/spores in the leaves of the imagination .mp3");
 }
 
 function setup() {
