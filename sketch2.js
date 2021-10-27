@@ -39,7 +39,7 @@ function draw() {
   let spectrum = fft.analyze();
   console.log(spectrum);
 
-  function radialLines() {
+  function radialEllipses() {
     translate((width/2), height/2); //centers objects within display window
     //rotate(rotAng);
 
@@ -88,18 +88,18 @@ function draw() {
     rotAng2 -= 107;
   }
 
- function radialLines2() {
+ function radialEllipses2() {
     //translate(70, 0); //centers objects within display window
     //rotate(rotAng);
 
     for (let i = spectrum.length - 1; i > 0; i--) {
-      //from center maps angles to a circle
+     
       let amp = spectrum[i];
       let x = 0;
       let y = 0;
 
       if (amp > 10) {
-        //color of ellipse
+   
 
         //first set
         fill(255, 255, 255);
@@ -156,8 +156,8 @@ function draw() {
 
   // }
 
-  radialLines();
-  radialLines2();
+  radialEllipses();
+  radialEllipses2();
   //lowFreqResponse();
   //radialEllipses()
 }
