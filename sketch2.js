@@ -100,7 +100,7 @@ function draw() {
       let x = 0;
       let y = 0;
 
-      if (amp > 10) {
+      if (amp > 100) {
         //color of ellipse
 
         //first set
