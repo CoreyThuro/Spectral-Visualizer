@@ -29,7 +29,6 @@ function setup() {
   button.mousePressed(toggleRecording);
   recording.play();
   fft = new p5.FFT();
-  
 }
 
 function draw() {
@@ -39,58 +38,52 @@ function draw() {
   let spectrum = fft.analyze();
   console.log(spectrum);
 
-
   function radialLines() {
-    translate((width/2), height/2); //centers objects within display window
+    translate(width / 2, height / 2); //centers objects within display window
     //rotate(rotAng);
 
     let x = 0;
     let y = 0;
 
-    for (let i = spectrum.length - 1; i > 0; i-=2) {
-       
+    for (let i = spectrum.length - 1; i > 0; i -= 2) {
       let amp = spectrum[i];
-  
-      
-      if (amp > 300) {
-      
+
+      if (amp > 120) {
         //first set
         fill(random(255), 255, 255);
-        rotate(rotAng/rotAng2)
-        ellipse(x-10, y-10, random(12,50), random(12,50));
-        rotate(rotAng)
-        ellipse(x-20, y-20, random(10,50), random(10,50));
-        rotate(rotAng2)
-        ellipse(x, y, random(10,50), random(10,50));
+        rotate(rotAng / rotAng2);
+        ellipse(x - 10, y - 10, random(12, 50)*2, random(12, 50)*2);
+        rotate(rotAng);
+        ellipse(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
+        rotate(rotAng2);
+        ellipse(x, y, random(10, 50)*2, random(10, 50)*2);
         rotate(rotAng * 2);
-        ellipse(x-10, y-10, random(15, 50), random(15, 50));
-        rotate(0)
-        fill(0)
-        ellipse(x, y, random(10), random(10))
-        
-        
+        ellipse(x - 10, y - 10, random(15, 50)*2, random(15, 50)*2);
+        rotate(0);
+        fill(0);
+        ellipse(x, y, random(10)*10, random(10)*10);
+
         //second set
-         fill(255, 255, random(255));
-         rotate(rotAng);
-         ellipse(x-20, y-20, random(12, 50), random(12, 50));
-         rotate(rotAng / rotAng2);
-         ellipse(x -20, y - 20, random(10, 50), random(10, 50));
-         rotate(rotAng2);
-         ellipse(x, y, random(10, 50), random(10, 50));
-         rotate(rotAng2 * 2);
-         ellipse(x-20, y-20, random(15, 50), random(15, 50));
-         rotate(0);
-         fill(0);
-         ellipse(x, y, random(10), random(10))
-         //ellipse(x+90, y+90, random(30, 40), random(30, 40));
-        
-      } 
+        fill(255, 255, random(255));
+        rotate(rotAng);
+        ellipse(x - 20, y - 20, random(12, 50)*2, random(12, 50)*2);
+        rotate(rotAng / rotAng2);
+        ellipse(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
+        rotate(rotAng2);
+        ellipse(x, y, random(10, 50)*2, random(10, 50)*2);
+        rotate(rotAng2 * 2);
+        ellipse(x - 20, y - 20, random(15, 50)*2, random(15, 50)*2);
+        rotate(0);
+        fill(0);
+        ellipse(x, y, random(10)*10, random(10)*10);
+        //ellipse(x+90, y+90, random(30, 40), random(30, 40));
+      }
     }
     rotAng += 100;
     rotAng2 -= 107;
   }
 
- function radialLines2() {
+  function radialLines2() {
     //translate(70, 0); //centers objects within display window
     //rotate(rotAng);
 
@@ -100,46 +93,42 @@ function draw() {
       let x = 0;
       let y = 0;
 
-      if (amp > 200) {
+      if (amp > 60) {
         //color of ellipse
 
         //first set
         fill(255, 255, 255);
         rotate(rotAng / rotAng2);
-        ellipse(x - 10, y - 10, random(12, 50), random(12, 50));
+        ellipse(x - 10, y - 10, random(12, 50)*2, random(12, 50)*2);
         rotate(rotAng);
-        ellipse(x - 20, y - 20, random(10, 50), random(10, 50));
+        ellipse(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
         rotate(rotAng2);
-        ellipse(x, y, random(10, 50), random(10, 50));
+        ellipse(x, y, random(10, 50)*2, random(10, 50)*2);
         rotate(rotAng * 2);
-        ellipse(x - 10, y - 10, random(15, 50), random(15, 50));
+        ellipse(x - 10, y - 10, random(15, 50)*2, random(15, 50)*2);
         rotate(0);
         fill(0);
-        ellipse(x, y, random(10), random(10));
+        ellipse(x, y, random(10)*10, random(10)*10);
 
         //second set
         fill(255, 255, 255);
         rotate(rotAng);
-        ellipse(x - 20, y - 20, random(12, 50), random(12, 50));
+        ellipse(x - 20, y - 20, random(12, 50)*2, random(12, 50)*2);
         rotate(rotAng / rotAng2);
-        ellipse(x - 20, y - 20, random(10, 50), random(10, 50));
+        ellipse(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
         rotate(rotAng2);
-        ellipse(x, y, random(40, 50), random(10, 50));
+        ellipse(x, y, random(40, 50)*2, random(10, 50)*2);
         rotate(rotAng2 * 2);
-        ellipse(x - 20, y - 20, random(15, 50), random(15, 50));
+        ellipse(x - 20, y - 20, random(15, 50)*2, random(15, 50)*2);
         rotate(0);
         fill(0);
-        ellipse(x, y, random(10), random(10));
+        ellipse(x, y, random(10)*10, random(10)*10);
         //ellipse(x+90, y+90, random(30, 40), random(30, 40));
-
-      
       }
     }
     rotAng += 100;
     rotAng2 -= 107;
   }
-
-
 
   /*function lowFreqResponse() {
     let fBass = fft.getEnergy("bass");
