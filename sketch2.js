@@ -66,7 +66,7 @@ function draw() {
         ellipse(x-10, y-10, random(15, 50), random(15, 50));
         rotate(0)
         fill(0)
-        ellipse(x, y, random(10, 70), random(10, 70))
+        ellipse(x, y, random(60, 70), random(60, 70))
         
         
         //second set
@@ -81,7 +81,7 @@ function draw() {
          ellipse(x-20, y-20, random(15, 50), random(15, 50));
          rotate(0);
          fill(0);
-         ellipse(x, y, random(10, 70), random(10, 70))
+         ellipse(x, y, random(60,70), random(60, 70))
          //ellipse(x+90, y+90, random(30, 40), random(30, 40));
         
       } 
@@ -115,7 +115,7 @@ function draw() {
         ellipse(x - 10, y - 10, random(15, 50), random(15, 50));
         rotate(0);
         fill(0);
-        ellipse(x, y, random(10, 70), random(10, 70));
+        ellipse(x, y, random(60, 70), random(60, 70));
 
         //second set
         fill(255, 255, 255);
@@ -129,7 +129,7 @@ function draw() {
         ellipse(x - 20, y - 20, random(15, 50), random(15, 50));
         rotate(0);
         fill(0);
-        ellipse(x, y, random(10, 70), random(10, 70));
+        ellipse(x, y, random(60, 70), random(60, 70));
         //ellipse(x+90, y+90, random(30, 40), random(30, 40));
 
       
