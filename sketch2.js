@@ -52,7 +52,7 @@ function draw() {
       let amp = spectrum[i];
   
       
-      if (amp > 100) {
+      if (amp > 200) {
       
         //first set
         fill(random(255), 255, 255);
