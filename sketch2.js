@@ -95,7 +95,7 @@ function draw() {
 
       if (amp > 60) {
         //color of ellipse
-
+        
         //first set
         fill(255, 255, 255);
         rotate(rotAng / rotAng2);
@@ -125,6 +125,7 @@ function draw() {
         rect(x, y, random(10)*10, random(10)*10);
         //ellipse(x+90, y+90, random(30, 40), random(30, 40));
       }
+        
     }
     rotAng += 100;
     rotAng2 -= 107;
