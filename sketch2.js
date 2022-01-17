@@ -52,30 +52,30 @@ function draw() {
         //first set
         fill(random(255), 255, 255);
         rotate(rotAng / rotAng2);
-        ellipse(x - 10, y - 10, random(12, 50)*2, random(12, 50)*2);
+        line(x - 10, y - 10, random(12, 50)*2, random(12, 50)*2);
         rotate(rotAng);
-        ellipse(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
+        line(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
         rotate(rotAng2);
-        ellipse(x, y, random(10, 50)*2, random(10, 50)*2);
+        line(x, y, random(10, 50)*2, random(10, 50)*2);
         rotate(rotAng * 2);
-        ellipse(x - 10, y - 10, random(15, 50)*2, random(15, 50)*2);
+        line(x - 10, y - 10, random(15, 50)*2, random(15, 50)*2);
         rotate(0);
         fill(0);
-        ellipse(x, y, random(10)*10, random(10)*10);
+        line(x, y, random(10)*10, random(10)*10);
 
         //second set
         fill(255, 255, random(255));
         rotate(rotAng);
-        ellipse(x - 20, y - 20, random(12, 50)*2, random(12, 50)*2);
+        line(x - 20, y - 20, random(12, 50)*2, random(12, 50)*2);
         rotate(rotAng / rotAng2);
-        ellipse(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
+        line(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
         rotate(rotAng2);
-        ellipse(x, y, random(10, 50)*2, random(10, 50)*2);
+        line(x, y, random(10, 50)*2, random(10, 50)*2);
         rotate(rotAng2 * 2);
-        ellipse(x - 20, y - 20, random(15, 50)*2, random(15, 50)*2);
+        line(x - 20, y - 20, random(15, 50)*2, random(15, 50)*2);
         rotate(0);
         fill(0);
-        ellipse(x, y, random(10)*10, random(10)*10);
+        line(x, y, random(10)*10, random(10)*10);
         //ellipse(x+90, y+90, random(30, 40), random(30, 40));
       }
     }
@@ -99,30 +99,30 @@ function draw() {
         //first set
         fill(255, 255, 255);
         rotate(rotAng / rotAng2);
-        ellipse(x - 10, y - 10, random(12, 50)*2, random(12, 50)*2);
+        rect(x - 10, y - 10, random(12, 50)*2, random(12, 50)*2);
         rotate(rotAng);
-        ellipse(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
+        rect(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
         rotate(rotAng2);
-        ellipse(x, y, random(10, 50)*2, random(10, 50)*2);
+        rect(x, y, random(10, 50)*2, random(10, 50)*2);
         rotate(rotAng * 2);
-        ellipse(x - 10, y - 10, random(15, 50)*2, random(15, 50)*2);
+        rect(x - 10, y - 10, random(15, 50)*2, random(15, 50)*2);
         rotate(0);
         fill(0);
-        ellipse(x, y, random(10)*10, random(10)*10);
+        rect(x, y, random(10)*10, random(10)*10);
 
         //second set
         fill(255, 255, 255);
         rotate(rotAng);
-        ellipse(x - 20, y - 20, random(12, 50)*2, random(12, 50)*2);
+        rect(x - 20, y - 20, random(12, 50)*2, random(12, 50)*2);
         rotate(rotAng / rotAng2);
-        ellipse(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
+        rect(x - 20, y - 20, random(10, 50)*2, random(10, 50)*2);
         rotate(rotAng2);
-        ellipse(x, y, random(40, 50)*2, random(10, 50)*2);
+        rect(x, y, random(40, 50)*2, random(10, 50)*2);
         rotate(rotAng2 * 2);
-        ellipse(x - 20, y - 20, random(15, 50)*2, random(15, 50)*2);
+        rect(x - 20, y - 20, random(15, 50)*2, random(15, 50)*2);
         rotate(0);
         fill(0);
-        ellipse(x, y, random(10)*10, random(10)*10);
+        rect(x, y, random(10)*10, random(10)*10);
         //ellipse(x+90, y+90, random(30, 40), random(30, 40));
       }
     }
